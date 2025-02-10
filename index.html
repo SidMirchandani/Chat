@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Napoleon Team D</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link
+          rel="icon"
+          href="https://i.postimg.cc/nzWz8pNR/Napoleon-D-Short.png"
+          type="image/x-icon"
+          />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Firebase SDKs (v8) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <section id="home">
+      <header>
+        <img
+             src="https://i.postimg.cc/nzWz8pNR/Napoleon-D-Short.png"
+             alt="Logo"
+             />
+        <h3>Minigame Conversation</h3>
+      </header>
+    </section>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <ul>
+          <li>
+            <img
+                 src="https://i.postimg.cc/cC8J0PSs/Napoleon-D-Long.png"
+                 alt="Long Logo"
+                 style="float: right;"
+                 height="50px"
+                 />
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+      
+      <!-- Puzzle Completion Popup -->
+      <div id="puzzle-popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn">&times;</span>
+          <h2 id="popup-title">Puzzle Completed!</h2>
+          <p id="popup-info"></p>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="chat-container">
+          <div class="chatbot active" id="chatbot">
+            <h3>Minigame Conversation</h3>
+            <div class="chat-window" id="chat-window"></div>
+            <!-- Single text input (no send button) -->
+            <input
+                   type="text"
+                   placeholder="Type your message and press Enter..."
+                   id="chat-input"
+                   />
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===== Footer Section ===== -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025. Made with ❤️ by 9-2 Team D: Siddharth Mirchandani, Aarav Mishra, Malvika Mishra.</p>
+      </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
